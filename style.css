@@ -8,74 +8,85 @@
 
 
 body {
-    background-color: rgb(34, 34, 34);
+    background-color: aliceblue;
     font-family: 'Montserrat', sans-serif;
     color: rgb(34, 34, 34);
     max-width: 1200px;
-
 }
 
 .Header{
     display: flex;
-    background-color: aliceblue;
+    background-color:rgb(34, 34, 34);
     width: 100%;
     position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
 }
 .head{
     display: flex;
     padding: 12px;
-    margin-left: 45%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.head li{
+    display: inline-block;
+    margin: 10px;
 }
 
 .head a{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    color: rgb(34, 34, 34);
-    padding: 10px;
+    color: aliceblue;
+    
+}
+
+a:hover{
+    color:rgb(60, 60, 65);
+    transition: 0.3s all;
 }
 
 .logo img{
-    margin-top: 0px;
+    margin-top: 10px;
     margin-left: 30px;
-    width: 200px;
 }
+ 
 
+/*--Aqui fica a main--*/
 
-/* Aqui fica a main */
 .main{
-    color: aliceblue;
     display: flex;
 }
 
 .foto img{
-
-    width: 1200px;
-    margin-top: 100px;
-    margin-left: 600px;
+    display: flex;
+    width: 1000px;
+    margin-top: 200px;
+    margin-left: 65%;
 
 }
 
 .about-me{
-    margin-top: 300px;
-    display: inline-block;
-    align-items: center;
-    margin-left: 200px;
     position: absolute;
+    margin-top: 22%;
+    margin-left: 12%;
 }
 
 .about-me h1{
-    margin-left: 230px;
+    font-size: 65px;
+    width: 800px;
 }
 
 .about-me p{
-    margin-top: 50px;
     width: 800px;
 }
 
 .opstions-obut-me a{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    color:aliceblue;
+    color:rgb(34, 34, 34);
     padding: 10px;
 }
 
@@ -90,19 +101,30 @@ body {
     text-align: center;
 }
 
+.Work{
+    
+}
+
 .Works{
-    padding-top: 1000px;
-    position:absolute;
-    margin-left: 250px;
-}
-
-.Works h1{
-    margin-left: 70px;
-    font-size: 50px;
-}
-
-.Works img{
+    width: 100%;
     padding: 20px;
-    border-radius: 25px;
-    flex-direction: row;
+    margin-top: 400px;
+    margin-left: 15%;
+    background-color: brown;
+}
+
+.Works ul{
+    display: flex;
+   list-style: none;
+   justify-content: space-between;
+}
+
+.Works a{
+    float: left;
+    padding: 20px;
+    align-items: center;  
+}
+
+.Work img{
+    width: 100%;
 }
